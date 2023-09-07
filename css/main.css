@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Kanit:wght@800&family=Oswald:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  font-family: "Xanh Mono", monospace;
+  font-size: 16px;
+}
+html p, body p {
+  position: relative;
+  top: 400px;
+  color: #545454;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: left;
+}
+html .container, body .container {
+  width: 100%;
+  height: 90vh;
+}
+html .container .row, body .container .row {
+  color: #000;
+}
+html .container .border-bottom, body .container .border-bottom {
+  border-bottom: 2px solid #000;
+}
+html .container .border-right, body .container .border-right {
+  border-right: 2px solid #000;
+}
+html .container .flex-center, body .container .flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html .container .row1, body .container .row1 {
+  position: relative;
+  top: -100%;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  background: #b3b0aa;
+}
+html .container .row2, body .container .row2 {
+  position: relative;
+  top: -100%;
+  z-index: 0;
+  display: flex;
+  width: 100%;
+  height: 60vh;
+}
+html .container .brand-name, body .container .brand-name {
+  position: relative;
+  left: -100%;
+  overflow: hidden;
+  flex: 5;
+}
+html .container .brand-name h1, body .container .brand-name h1 {
+  position: relative;
+  top: 400px;
+  font-family: "Kanit", sans-serif;
+  font-size: 8rem;
+}
+html .container .brand-contact, body .container .brand-contact {
+  position: relative;
+  left: -4rem;
+  overflow: hidden;
+  flex: 2;
+  flex-direction: column;
+}
+html .container .hero-copy, body .container .hero-copy {
+  display: flex;
+  flex: 5;
+  flex-direction: column;
+}
+html .container .hero-img, body .container .hero-img {
+  flex: 2;
+}
+html .container .hero-img .img-container, body .container .hero-img .img-container {
+  position: relative;
+  overflow: hidden;
+  flex: 3;
+  height: 100%;
+}
+html .container .hero-img .img-container .box, body .container .hero-img .img-container .box {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: #b3b0aa;
+  opacity: 1;
+}
+html .container .hero-img .img-container img, body .container .hero-img .img-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html .container .hero-img .empty-rows, body .container .hero-img .empty-rows {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background: #b3b0aa;
+}
+html .container .hero-img .empty-rows .white-space, body .container .hero-img .empty-rows .white-space {
+  width: 100%;
+}
+html .container .hero-img .empty-rows .white-space:first-child, body .container .hero-img .empty-rows .white-space:first-child {
+  flex: 3;
+}
+html .container .hero-img .empty-rows .white-space:last-child, body .container .hero-img .empty-rows .white-space:last-child {
+  flex: 2;
+}
+html .container .i-row, body .container .i-row {
+  display: flex;
+  width: 100%;
+}
+html .container .i-row > .col, body .container .i-row > .col {
+  background: #b3b0aa;
+}
+html .container .i-row .col:nth-child(1), body .container .i-row .col:nth-child(1) {
+  flex: 3;
+}
+html .container .i-row .col:nth-child(2), body .container .i-row .col:nth-child(2) {
+  flex: 2;
+}
+html .container .i-row1, body .container .i-row1 {
+  flex: 3;
+}
+html .container .i-row1 .col:nth-child(1), body .container .i-row1 .col:nth-child(1) {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-radius: 0 0 40px 0;
+}
+html .container .i-row1 .col:nth-child(2), body .container .i-row1 .col:nth-child(2) {
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-radius: 0 0 0 40px;
+}
+html .container .i-row2, body .container .i-row2 {
+  flex: 2;
+}
+html .container .i-row2 .col:nth-child(1), body .container .i-row2 .col:nth-child(1) {
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  border-radius: 0 40px 0 0;
+}
+html .container .i-row2 .col:nth-child(2), body .container .i-row2 .col:nth-child(2) {
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  border-radius: 40px 0 0 0;
+}
+html .container .projects, body .container .projects {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+html .container .projects-list, body .container .projects-list {
+  padding: 0 4em;
+}
+html .container .projects .h-stripe, body .container .projects .h-stripe {
+  position: absolute;
+  right: -8em;
+  transform: rotate(-90deg);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-family: "Anonymous Pro", monospace;
+}
+html .container .projects .h-stripe span, body .container .projects .h-stripe span {
+  padding: 10px 0;
+  font-size: 2rem;
+}
+html .container .text, body .container .text {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: "Xanh Mono", monospace;
+}
+html .container .lets-talk p, body .container .lets-talk p {
+  font-size: 3rem;
+}
+html .container .lets-talk p span, body .container .lets-talk p span {
+  color: #000;
+  font-family: "Kanit", sans-serif;
+}
+html .container .stripe, body .container .stripe {
+  position: relative;
+  overflow: hidden;
+}
+html .container .stripe .line, body .container .stripe .line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-24.8deg);
+  width: 150%;
+  height: 2px;
+  background: #000;
+}
+html .marquee, body .marquee {
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.2em;
+  background: #000;
+  white-space: nowrap;
+}
+html .marquee span, body .marquee span {
+  padding-left: -10%;
+  color: #b3b0aa;
+  font-family: "Xanh Mono", monospace;
+  font-size: 4em;
+  text-transform: uppercase;
+  animation: marquee 80s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  0% {
+    transform: translate(-100%, 0);
+  }
+}/*# sourceMappingURL=main.css.map */
